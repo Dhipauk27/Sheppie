@@ -1,0 +1,44 @@
+{
+  "name": "shep",
+  "version": "1.0.0",
+  "description": "[![N|Screensghot](https://lh3.googleusercontent.com/-hIq62YGFGng/XNUI-khVIII/AAAAAAAAL5c/RnH9jJDCeeQKEMKN8VJs1kaCZ76P2yP7wCK8BGAs/s0/FireShot%2BCapture%2B001%2B-%2BReact%2BApp%2B-%2Blocalhost.png)](https://lh3.googleusercontent.com/-hIq62YGFGng/XNUI-khVIII/AAAAAAAAL5c/RnH9jJDCeeQKEMKN8VJs1kaCZ76P2yP7wCK8BGAs/s0/FireShot%2BCapture%2B001%2B-%2BReact%2BApp%2B-%2Blocalhost.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "scheduler": "nodemon --exec babel-node scheduler.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arjunghimire/react-leaflet-routing-machine-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arjunghimire/react-leaflet-routing-machine-example/issues"
+  },
+  "homepage": "https://github.com/arjunghimire/react-leaflet-routing-machine-example#readme",
+  "dependencies": {
+    "@google-cloud/storage": "^5.14.2",
+    "babel-cli": "^6.26.0",
+    "babel-node": "0.0.1-security",
+    "bluebird": "^3.7.2",
+    "compromise": "^13.11.4",
+    "compromise-dates": "^2.2.1",
+    "compromise-numbers": "^1.4.0",
+    "concurrently": "^6.2.1",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "googleapis": "^88.2.0",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.6",
+    "multer": "^1.4.2",
+    "node-cron": "^3.0.0",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.2",
+    "qrcode-terminal": "^0.12.0",
+    "spacy-nlp": "git+https://github.com/jeffreyflynt/spacy-nlp.git",
+    "whatsapp-web.js": "^1.15.3"
+  }
+}
